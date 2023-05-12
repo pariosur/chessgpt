@@ -1,2 +1,5 @@
 api_key.py
 notebook.ipynb
+__pycache__/
+*.py[cod]
+*$py.class
