@@ -25,7 +25,7 @@ def gpt_response(username):
             # prompt = prompt,
             messages = [{"role":"user", "content": prompt}],
             temperature=0.5,
-            max_tokens = 750,
+            max_tokens = 300,
         )
 
     reply = response.choices[0]["message"]["content"]
