@@ -12,21 +12,22 @@
   <body class="p-3 bg-dark text-light">
     <div class="container">
       <h1 class="mb-4">Chess GPT</h1>
-      <h2 class="mb-4">Get chess advice from the GPT-3 language model</h2>
-      <p class="lead">Enter a chess player's username to get personalized advice for improving your game.</p>
+      <h2 class="mb-4">Get chess advice from the GPT language model</h2>
+      <p class="lead">Enter a Chess.com player's username to get personalized advice for improving, based on the last game played.</p>
+
+
       <form action="/" method="POST">
         <div class="mb-3">
           <label for="username" class="form-label">Enter your Chess.com username:</label>
           <input type="text" class="form-control" name="username" id="username">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Analyze</button>
       </form>
       <hr>
-      <p class="lead">Here is my analysis:</p>
+      <h3 class="mb-3">Here is my analysis:</h3>
       <p>
         {{ result }}
       </p>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
