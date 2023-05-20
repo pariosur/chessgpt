@@ -1,12 +1,9 @@
 import openai
 from pprint import pprint
 from chess_game import get_most_recent_game
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
 
-openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def gpt_response(username):
 
@@ -16,6 +13,9 @@ def gpt_response(username):
             f"{pgn}\n\n"
             f"Based on the game, make some suggestions to {username} in order to improve their game.")
 
+
+
+    # prompt = "Analyze this game and focus on the username player mistakes and suggestions to practice and improve its game"
 
     model = "gpt-3.5-turbo"
 
